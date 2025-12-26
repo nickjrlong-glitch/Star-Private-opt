@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="driver">
+      <UniqueIdentifier>{2d894817-2f5a-493e-8268-28564e93d72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{1719a7a9-9896-411a-8c76-23c524316688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\aimbot">
+      <UniqueIdentifier>{6f7d4574-1234-406a-93f5-728b704c7c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\visuals">
+      <UniqueIdentifier>{bf792138-1630-47b2-9a0d-275d311029e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{723528b1-397a-4972-8857-e43997645168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes">
+      <UniqueIdentifier>{a1e4d89a-3642-4e43-8515-5c12519195b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\libs">
+      <UniqueIdentifier>{01df5e70-388a-4c28-971c-383274296839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="overlay">
+      <UniqueIdentifier>{f3b497e8-4228-4441-949d-c5c84d6350d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protection">
+      <UniqueIdentifier>{f30453d1-8798-42fa-9d41-3d712e5845c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk-offsets">
+      <UniqueIdentifier>{71a4f005-4c6e-4f11-897a-9e32a6136d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security">
+      <UniqueIdentifier>{d6f83b16-8d59-4b68-963b-6f81e33d28bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings">
+      <UniqueIdentifier>{4c56885f-7554-4710-85f0-622f6d6c40a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decrypt">
+      <UniqueIdentifier>{e167c9c0-2e06-4444-934d-17865c697816}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="security.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="keyauth.hpp" />
+    <ClInclude Include="keyauth_config.hpp" />
+    <ClInclude Include="keyauth_simple.hpp" />
+    <ClInclude Include="menu.hpp" />
+    <ClInclude Include="security.hpp" />
+    <ClInclude Include="skCrypter.h" />
+    <ClInclude Include="driver\comm.hpp">
+      <Filter>driver</Filter>
+    </ClInclude>
+    <ClInclude Include="game\aimbot\Aimbot.hpp">
+      <Filter>game\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="game\visuals\Esp-Draw.hpp">
+      <Filter>game\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="game\Gameloop.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx9.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\resource.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\librarys.hpp">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\overlay-hjack.hpp">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="protection\protect.hpp">
+      <Filter>protection</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk-offsets\offsets.hpp">
+      <Filter>sdk-offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk-offsets\sdk.hpp">
+      <Filter>sdk-offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="security\antiattach.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\antivm.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\lazy_importer.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\string_crypters.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="settings\settings.hpp">
+      <Filter>settings</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project> 
